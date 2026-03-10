@@ -79,6 +79,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-black to-dark-gray text-white py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
+          {/* Logo Hi Ju-Jitsu */}
+          <div className="mb-8">
+            <img 
+              src="/logo.jpeg" 
+              alt="Logo Hi Ju-Jitsu" 
+              className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-6"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
             Rifa Solidária – Ajude nossa equipe a competir no Campeonato Brasileiro de Ju-Jitsu
           </h1>
@@ -165,14 +173,12 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white p-8 rounded-lg shadow-lg border-2 border-orange">
-              <div className="text-4xl mb-4">1️⃣</div>
               <h3 className="text-2xl font-bold mb-4 text-black">Kimono Infantil</h3>
               <p className="text-dark-gray mb-2">{100 - rifas[0].soldNumbers.length - (unavailableNumbers[1]?.length || 0)} números disponíveis</p>
               <p className="text-2xl font-bold text-orange mb-4">R$10 cada número</p>
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-lg border-2 border-orange">
-              <div className="text-4xl mb-4">2️⃣</div>
               <h3 className="text-2xl font-bold mb-4 text-black">Kimono Adulto</h3>
               <p className="text-dark-gray mb-2">{100 - rifas[1].soldNumbers.length - (unavailableNumbers[2]?.length || 0)} números disponíveis</p>
               <p className="text-2xl font-bold text-orange mb-4">R$10 cada número</p>
@@ -322,6 +328,14 @@ export default function Home() {
       {/* Rodapé */}
       <footer className="bg-black text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
+          {/* Logo no rodapé */}
+          <div className="mb-4">
+            <img 
+              src="/logo-hi-ju-jitsu.png" 
+              alt="Logo Hi Ju-Jitsu" 
+              className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 opacity-80"
+            />
+          </div>
           <p className="font-bold text-lg mb-2">Projeto Hi Ju-Jitsu</p>
           <p className="text-gray-300 mb-2">Treinos na ONG Fênix Zona Sul</p>
           <p className="text-orange font-semibold">Ju-Jitsu transformando vidas.</p>
